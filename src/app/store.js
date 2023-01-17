@@ -3,6 +3,6 @@ import filterReducer from '../features/Filters/filterSlice';
 
 export const store = configureStore({
   reducer: {
-    filter: filterReducer,
+    filterCenter: filterReducer,
   },
 });

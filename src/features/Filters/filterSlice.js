@@ -1,23 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  value: 0,
-  status: 'idle',
+  serverParams:{
+    s: "pokemon",
+    apikey: '32e9d15',
+    page: 1,
+    type: "",
+    y: ""
+  }
 };
 
 
 export const filterSlice = createSlice({
-  name: 'filter',
+  name: 'filterCenter',
   initialState,
-  // The `reducers` field lets us define reducers and generate associated actions
+
   reducers: {
-   
+   handleServerParams: (state, action)=>{
+    state.serverParams = action.payload
+   }
   },
  
 });
 
-export const {  } = filterSlice.actions;
-
-
+export const { handleServerParams } = filterSlice.actions;
+export const params = (state) => state.filterCenter.serverParams;
 
 export default filterSlice.reducer;

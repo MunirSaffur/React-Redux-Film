@@ -1,0 +1,25 @@
+.cardBody{
+    height: 350px;
+    position: relative;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cardContent{
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    padding-top: 60%;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.2231267507002801) 80%, rgba(0,212,255,0) 100%);
+  }
+  .cardImg{
+    width: 100%;
+      height: 25vw;
+    object-fit: contain;
+  }
+  
