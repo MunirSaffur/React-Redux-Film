@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar bg="dark" variant="dark" className="mb-3">
+    <Navbar bg="dark" variant="dark" className="">
       <Container>
-        <Navbar.Brand href="/" className="fw-bold">
+        <Navbar.Brand className="fw-bold">
           React Film
         </Navbar.Brand>
         <Nav className="me-auto">

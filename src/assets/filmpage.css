@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.hero {
+  text-align: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.hero:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0.7;
+}
+
+.mv-single-hero {
+  background-repeat: no-repeat;
+  height: 598px;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.hero-ontop {
+  z-index: 1;
+}
+
+
+i.material-icons {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+#content_hero .scroll {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  margin-left: -45px;
+  -webkit-animation: ScrollDown 1.5s infinite;
+          animation: ScrollDown 1.5s infinite;
+}
+
+#content_hero:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background-image: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 100%);
+  height: 100vh !important;
+}
+
+#content_hero .container .blurb {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  -webkit-animation: Blurb 0.5s 0.5s forwards;
+          animation: Blurb 0.5s 0.5s forwards;
+  text-align: left;
+}
+
+#content_hero .container .blurb h1 {
+  font-size: 52px;
+  font-weight: 300;
+  padding: 0;
+  -webkit-animation: Heading 0.5s 0.5s forwards;
+          animation: Heading 0.5s 0.5s forwards;
+  letter-spacing: 3px;
+  opacity: 0;
+  color: #fff;
+  border: none;
+}
+
+#content_hero .container .blurb p {
+  font-size: 18px;
+  color: #fff;
+}
+#content_hero .container .blurb span{
+    font-size: 14px;
+    color: #fafafa; 
+}
+
+#content_hero .container .blurb .certificate {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 43px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  transform: translateY(2px);
+  text-align: center;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+
+#content_hero {
+  position: relative;
+  transition: all 300ms ease-in-out;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#content_hero:before {
+  top: auto;
+  height: 70%;
+}
+
+#content_hero .container .blurb {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+#content_hero .container .blurb h1 {
+  -webkit-animation: none;
+          animation: none;
+  opacity: 1;
+}
+
+#content_hero .buttons .btn {
+  margin-right: 15px;
+}
+
+span.title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fbbd61;
+}

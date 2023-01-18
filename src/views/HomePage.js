@@ -5,6 +5,7 @@ import FilmItem from '../components/FilmItem'
 import { params } from '../features/Filters/filterSlice'
 import { useSelector } from 'react-redux';
 import Filters from '../components/Filters';
+import Paginations from '../components/Paginations';
 
 
 export default function HomePage() {
@@ -45,6 +46,8 @@ export default function HomePage() {
           <h4 className="h5 fw-bold text-light">No Resault</h4>
         )}
         </Grid>
+
+        <Paginations/>
     </div>
   )
 }

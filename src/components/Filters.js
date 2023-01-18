@@ -1,13 +1,13 @@
 import React from 'react'
 import { Grid, GridItem  } from "@chakra-ui/react";
-import { Form, Pagination, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { params, handleServerParams } from '../features/Filters/filterSlice'
 import { useSelector, useDispatch } from 'react-redux';
 
 export default function Filters() {
     const serverParams = useSelector(params);
     const dispatch = useDispatch();
-    
+
      // handle search
     function handleSearch(e) {
         const newParams = { ...serverParams };
@@ -30,7 +30,7 @@ export default function Filters() {
     }
 
   return (
-    <div>
+    <div className='my-3'>
          <Grid templateColumns="repeat(3, 1fr)" gap={6} className="">
         <GridItem w="100%">
           <h4 className="h5 fw-bold text-light m-1">Search</h4>
